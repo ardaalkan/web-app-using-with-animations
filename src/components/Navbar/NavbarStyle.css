@@ -1,0 +1,118 @@
+/* NAVBAR */
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+
+.navbar {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  min-height: 80px;
+  font-family: "Staatliches", cursive;
+}
+
+.navbar__heading {
+  color: #b9b9b9;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.navbar img {
+  width: 50px;
+  margin-left: 50px;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin-left: 20px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+  font-size: 20px;
+}
+
+/* Hover effect for list items */
+.navbar li:hover {
+  color: rgb(255, 136, 0);
+}
+
+.navbar li:hover::after {
+  content: ""; /* Empty content for the pseudo-element */
+  display: block;
+  position: absolute;
+  bottom: -0.5rem; /* Adjust as needed to position the underline */
+  left: 0;
+  height: 2px; /* Thickness of the underline */
+  background-color: #fff; /* Color of the underline */
+}
+
+.active {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.active:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.active:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 765px) {
+  @media screen and (max-width: 765px) {
+    .navbar ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
+      position: fixed;
+      top: 60px;
+      right: 0;
+      width: 40vw;
+      height: 100vh;
+      background-color: #333;
+      padding: 20px;
+    }
+
+    .navbar li {
+      margin: 10px 0;
+      font-size: 18px;
+      display: block;
+    }
+  }
+
+  .mobile {
+    display: block;
+    color: #fff;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 24px;
+  }
+
+  .mobile i {
+    display: block;
+  }
+}
+
+/* NAVBAR */
