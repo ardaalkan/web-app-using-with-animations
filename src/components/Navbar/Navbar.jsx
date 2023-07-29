@@ -4,20 +4,28 @@ import logo from "../../assets/logo.svg";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [collapse, setCollapse] = useState("navbar_ul");
+  // const [toggleIcon, setToggleIcon] = useState('');
 
   const handleMenuClick = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const onToggle = () => {
+    collapse === "navbar_ul"
+      ? setCollapse("navbar_ul collapse")
+      : setCollapse("navbar_ul");
+  };
+
   return (
     <nav className="navbar">
       <img src={logo} alt="logo" />
-      <ul>
+      <ul className={collapse} onClick={collapse}>
         <li className="active">Contact</li>
         <li className="active">About</li>
         <li className="active">Shop</li>
       </ul>
-      <div className="mobile" onClick={handleMenuClick}>
+      <div className="mobile" onClick={onToggle}>
         {isMenuOpen ? (
           <i className="fas fa-times"></i>
         ) : (
