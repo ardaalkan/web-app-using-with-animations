@@ -1,10 +1,14 @@
-import './App.css';
-import Navbar from './components/Navbar/Navbar';
+import "./App.css";
+import Navbar from "./components/Navbar/Navbar";
+import LandingPage from "./components/LandingPage/LandingPage";
+import InfinityScroll from "./components/InfinityScroll/InfinityScroll";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+      <LandingPage />
+      <InfinityScroll/>
     </div>
   );
 }

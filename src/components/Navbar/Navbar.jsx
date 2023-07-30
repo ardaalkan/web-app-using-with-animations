@@ -5,16 +5,16 @@ import logo from "../../assets/logo.svg";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [collapse, setCollapse] = useState("navbar_ul");
-  // const [toggleIcon, setToggleIcon] = useState('');
 
-  const handleMenuClick = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // const handleMenuClick = () => {
+  //   setIsMenuOpen(!isMenuOpen);
+  // };
 
   const onToggle = () => {
     collapse === "navbar_ul"
       ? setCollapse("navbar_ul collapse")
       : setCollapse("navbar_ul");
+    setIsMenuOpen(!isMenuOpen); // Toggle the isMenuOpen state
   };
 
   return (
