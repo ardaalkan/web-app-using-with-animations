@@ -2,7 +2,7 @@
 
 .sliderContainer {
   position: relative;
-  z-index: 999;
+  z-index: 111;
   color: aliceblue;
   overflow: hidden;
 }
