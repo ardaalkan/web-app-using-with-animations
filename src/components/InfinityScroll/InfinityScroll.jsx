@@ -36,7 +36,7 @@ const InfinityScroll = () => {
     gsap.set(firstText.current, { xPercent: xPercent });
     // eslint-disable-next-line no-dupe-keys
     gsap.set(secondText.current, { xPercent, xPercent });
-    xPercent += 0.08 * direction;
+    xPercent += 0.05 * direction;
     requestAnimationFrame(animation);
   };
 

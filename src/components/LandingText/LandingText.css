@@ -1,0 +1,32 @@
+/* LandingText.css */
+
+.landing-text-container {
+  padding: 350px;
+  margin: 150px;
+  background-color: #333;
+  color: aliceblue;
+  font-size: 50px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-family: "Staatliches", cursive;
+}
+
+.landing-text-container span {
+}
+
+.landing-text-container span {
+  font-family: "Lumanosimo";
+  font-size: 24px;
+  font-weight: bold;
+  color: red;
+}
+
+.landing-text-container div::selection {
+  background-color: rgb(255, 136, 0);
+  color: #333;
+}
+
+.landing-text-container span::selection {
+  background-color: rgb(255, 136, 0);
+  color: #333;
+}
