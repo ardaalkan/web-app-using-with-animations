@@ -6,6 +6,7 @@ import LandingText from "./components/LandingText/LandingText";
 import Preloader from "./components/Preloader/Preloader";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import DetailText from "./components/DetailText/DetailText";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -28,6 +29,7 @@ function App() {
       <LandingPage />
       <InfinityScroll />
       <LandingText />
+      <DetailText/>
     </div>
   );
 }

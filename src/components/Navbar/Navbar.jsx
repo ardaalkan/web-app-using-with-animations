@@ -20,7 +20,7 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <img src={logo} alt="logo" />
-      <ul className={collapse} onClick={collapse}>
+      <ul className={collapse}>
         <li className="active">Contact</li>
         <li className="active">About</li>
         <li className="active">Shop</li>
