@@ -25,7 +25,7 @@ const LandingPage = () => {
     show: {
       clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
       transition: {
-        delay: 0.5,
+        delay: 2.5,
         duration: 0.5,
         ease: "easeInOut",
       },

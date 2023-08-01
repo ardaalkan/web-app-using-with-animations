@@ -1,10 +1,10 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  /* cursor: none; */
+  cursor: none;
 }
 
-/* .cursor-dot {
+.cursor-dot {
   width: 5px;
   height: 5px;
   background-color: white;
@@ -25,4 +25,4 @@
   border-radius: 50%;
   z-index: 1;
   pointer-events: none;
-} */
+}

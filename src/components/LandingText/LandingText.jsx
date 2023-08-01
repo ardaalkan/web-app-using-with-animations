@@ -1,10 +1,29 @@
 import React from "react";
 import "./LandingText.css";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const LandingText = () => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5, // Elementin yüzde 10'u ekrana girdiğinde çalıştır.
+  });
+
+  const textVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 },
+  };
+
   return (
     <main>
-      <div className="landing-text-container">
+      <motion.div
+        className="landing-text-container"
+        ref={ref}
+        initial="hidden"
+        animate={inView ? "visible" : "hidden"}
+        variants={textVariants}
+        transition={{ duration: 2.5 }}
+      >
         <div>
           Formula 1 is a globally acclaimed motorsport competition that garners
           immense interest. In these races, pilots engage in a fusion o{" "}
@@ -14,7 +33,7 @@ const LandingText = () => {
           <span>Monaco</span> provide exhilarating moments for millions of
           spectators .{" "}
         </div>
-      </div>
+      </motion.div>
     </main>
   );
 };

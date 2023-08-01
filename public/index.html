@@ -46,8 +46,8 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!-- <div data-cursor-dot class="cursor-dot"></div>
-    <div data-cursor-outline class="cursor-outline"></div> -->
+    <div data-cursor-dot class="cursor-dot"></div>
+    <div data-cursor-outline class="cursor-outline"></div> 
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -59,29 +59,29 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <script>
-      // document.addEventListener("DOMContentLoaded", function () {
-      //   const cursorDot = document.querySelector("[data-cursor-dot]");
-      //   const cursorOutline = document.querySelector("[data-cursor-outline]");
+      document.addEventListener("DOMContentLoaded", function () {
+        const cursorDot = document.querySelector("[data-cursor-dot]");
+        const cursorOutline = document.querySelector("[data-cursor-outline]");
 
-      //   window.addEventListener("mousemove", function (e) {
-      //     const posX = e.clientX;
-      //     const posY = e.clientY;
+        window.addEventListener("mousemove", function (e) {
+          const posX = e.clientX;
+          const posY = e.clientY;
 
-      //     cursorDot.style.left = `${posX}px`;
-      //     cursorDot.style.top = `${posY}px`;
+          cursorDot.style.left = `${posX}px`;
+          cursorDot.style.top = `${posY}px`;
 
-      //     cursorOutline.style.left = `${posX}px`;
-      //     cursorOutline.style.top = `${posY}px`;
+          cursorOutline.style.left = `${posX}px`;
+          cursorOutline.style.top = `${posY}px`;
 
-      //     cursorOutline.animate(
-      //       {
-      //         left: `${posX}px`,
-      //         top: `${posY}px`,
-      //       },
-      //       { duration: 500, fill: "forwards" }
-      //     );
-      //   });
-      // });
+          cursorOutline.animate(
+            {
+              left: `${posX}px`,
+              top: `${posY}px`,
+            },
+            { duration: 500, fill: "forwards" }
+          );
+        });
+      });
     </script>
   </body>
 </html>
