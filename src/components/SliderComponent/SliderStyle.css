@@ -1,4 +1,38 @@
-.slider-component{
-    background-color: rgb(85, 109, 131);
-    height: 50vh;
+.slider-component {
+  background-color: rgba(12, 76, 136, 0.63);
+  height: 50vh;
+}
+
+.slider-background {
+  height: 150px;
+  background-color: rgb(122, 122, 122);
+}
+
+.slider-wrapper {
+  padding-top: 120px;
+  height: 560px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.slider-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-weight: bold;
+  font-size: 38px;
+  margin-bottom: 3%;
+  font-family: "Staatliches", cursive;
+  color: rgb(255, 136, 0);
+  letter-spacing: 3px;
+}
+
+.slider-body {
+  height: 350px;
+}
+
+.slider-image-item img{
+  max-height: 30rem;
+  margin: 10px;
+  pointer-events: none;
 }

@@ -32,7 +32,7 @@ const LandingPage = () => {
     },
   };
 
-  const imgMovementFactor = 0.03;
+  const imgMovementFactor = 0.005;
   const imgXOffset =
     (mousePos.x / window.innerWidth - 0.5) *
     window.innerWidth *
@@ -47,7 +47,7 @@ const LandingPage = () => {
     y: imgYOffset,
   };
 
-  const h2MovementFactor = 0.01;
+  const h2MovementFactor = 0.005;
   const h2XOffset =
     (mousePos.x / window.innerWidth - 0.5) *
     window.innerWidth *
