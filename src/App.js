@@ -8,6 +8,7 @@ import DetailText from "./components/DetailText/DetailText";
 import Slider from "./components/SliderComponent/Slider";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
+import Footer from "./components/Footer/Footer";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
       <LandingText />
       <DetailText />
       <Slider />
+      <Footer/>
     </div>
   );
 }
