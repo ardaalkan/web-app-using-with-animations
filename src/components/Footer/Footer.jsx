@@ -1,5 +1,6 @@
 import React from "react";
 import "./FooterStyle.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,16 +11,20 @@ const Footer = () => {
             <h4>company</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/about">about us</Link>
               </li>
               <li>
-                <a href="#">our service</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/service">our service</Link>
               </li>
               <li>
-                <a href="#">privacy policy</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/privacy">privacy policy</Link>
               </li>
               <li>
-                <a href="#">affiliate program</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/affiliate">affiliate program</Link>
               </li>
             </ul>
           </div>
@@ -27,13 +32,16 @@ const Footer = () => {
             <h4>get help</h4>
             <ul>
               <li>
-                <a href="#">FAQ</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/faq">FAQ</Link>
               </li>
               <li>
-                <a href="#">returns</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/returns">returns</Link>
               </li>
               <li>
-                <a href="#">Status</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/status">Status</Link>
               </li>
             </ul>
           </div>
@@ -41,16 +49,20 @@ const Footer = () => {
             <h4>company</h4>
             <ul>
               <li>
-                <a href="#">about us</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/about">about us</Link>
               </li>
               <li>
-                <a href="#">our service</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/service">our service</Link>
               </li>
               <li>
-                <a href="#">privacy policy</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/privacy">privacy policy</Link>
               </li>
               <li>
-                <a href="#">affiliate program</a>
+                {/* Değiştir: href yerine to özelliğini kullanın */}
+                <Link to="/affiliate">affiliate program</Link>
               </li>
             </ul>
           </div>

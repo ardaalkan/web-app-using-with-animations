@@ -9,7 +9,7 @@ import Slider from "./components/SliderComponent/Slider";
 import { useState, useEffect } from "react";
 import { AnimatePresence } from "framer-motion";
 import Footer from "./components/Footer/Footer";
-
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,18 +24,20 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <AnimatePresence mode="wait">
-        {isLoading && <Preloader />}
-      </AnimatePresence>
-      <Navbar />
-      <LandingPage />
-      <InfinityScroll />
-      <LandingText />
-      <DetailText />
-      <Slider />
-      <Footer/>
-    </div>
+    <Router>
+      <div className="App">
+        <AnimatePresence mode="wait">
+          {isLoading && <Preloader />}
+        </AnimatePresence>
+        <Navbar />
+        <LandingPage />
+        <InfinityScroll />
+        <LandingText />
+        <DetailText />
+        <Slider />
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
